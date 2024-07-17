@@ -1,0 +1,31 @@
+group 'com.rmawatson.flutterisolate'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.1'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.rmawatson.flutterisolate'
+    compileSdk  34
+
+    defaultConfig {
+        minSdkVersion 24
+    }
+}
